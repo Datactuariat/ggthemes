@@ -18,7 +18,7 @@ NULL
 #'      geom_smooth(method = "lm", se = FALSE) +
 #'      scale_color_fivethirtyeight() +
 #'      theme_fivethirtyeight()
-theme_fivethirtyeight2 <- function(base_size = 12, base_family = "sans",legpos="right",legdir="vertical",legbox="vertical") {
+theme_fivethirtyeight <- function(base_size = 12, base_family = "sans",legpos="right",legdir="vertical",legbox="vertical") {
   (theme_foundation(base_size = base_size, base_family = base_family)
    + theme(
      line = element_line(colour = "black"),
