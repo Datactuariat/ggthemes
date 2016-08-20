@@ -30,7 +30,7 @@ theme_fivethirtyeight <- function(base_size = 12, base_family = "sans",legpos="r
      axis.ticks = element_blank(),
      axis.line = element_blank(),
      legend.background = element_rect(),
-     legend.position = guidepos,
+     legend.position = legpos,
      legend.direction = legdir,
      legend.box = legbox,
      panel.grid = element_line(colour = NULL),
