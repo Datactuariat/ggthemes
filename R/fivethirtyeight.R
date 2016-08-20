@@ -18,7 +18,7 @@ NULL
 #'      geom_smooth(method = "lm", se = FALSE) +
 #'      scale_color_fivethirtyeight() +
 #'      theme_fivethirtyeight()
-theme_fivethirtyeight <- function(base_size = 12, base_family = "sans") {
+theme_fivethirtyeight2 <- function(base_size = 12, base_family = "sans",legpos="right",legdir="vertical",legbox="vertical") {
   (theme_foundation(base_size = base_size, base_family = base_family)
    + theme(
      line = element_line(colour = "black"),
@@ -30,9 +30,9 @@ theme_fivethirtyeight <- function(base_size = 12, base_family = "sans") {
      axis.ticks = element_blank(),
      axis.line = element_blank(),
      legend.background = element_rect(),
-     legend.position = "bottom",
-     legend.direction = "horizontal",
-     legend.box = "vertical",
+     legend.position = guidepos,
+     legend.direction = legdir,
+     legend.box = legbox,
      panel.grid = element_line(colour = NULL),
      panel.grid.major =
        element_line(colour = ggthemes_data$fivethirtyeight["medgray"]),
